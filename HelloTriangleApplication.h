@@ -62,8 +62,8 @@ private:
     VkBuffer indexBuffer;
     VkDeviceMemory indexBufferMemory;
     std::vector<VkBuffer> uniformBuffers;
-    //std::vector<VkDeviceMemory> uniformBuffersMemory;
-    //std::vector<VkDescriptorSet> descriptorSets;
+    std::vector<VkDeviceMemory> uniformBuffersMemory;
+    std::vector<VkDescriptorSet> descriptorSets;
 
     std::vector<VkSemaphore> imageAvailableSemaphores;
     std::vector<VkSemaphore> renderFinishedSemaphores;
@@ -71,7 +71,7 @@ private:
     std::vector<VkFence> imagesInFlight;
     size_t currentFrame = 0;
 
-    //VkDescriptorPool descriptorPool;
+    VkDescriptorPool descriptorPool;
 
     bool framebufferResized = false;
 
@@ -98,10 +98,10 @@ private:
     void createCommandPool();
     void createVertexBuffer();
     void createIndexBuffer();
-    //void createUniformBuffers();
-    //void updateUniformBuffer(uint32_t currentImage);
-    //void createDescriptorPool();
-    //void createDescriptorSets();
+    void createUniformBuffers();
+    void updateUniformBuffer(uint32_t currentImage);
+    void createDescriptorPool();
+    void createDescriptorSets();
     void createCommandBuffers();
     void createSyncObjects();
 
