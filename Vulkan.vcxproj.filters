@@ -16,6 +16,9 @@
     <Filter Include="리소스 파일\shaders">
       <UniqueIdentifier>{1eb6b376-1850-4a0d-b740-5cb997c92fcb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Memos">
+      <UniqueIdentifier>{a3a3ebb0-3247-4094-98f1-bb53ecaec414}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,9 @@
     <ClInclude Include="HelloTriangleApplication.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shaders\shader.frag">
@@ -46,7 +52,10 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="memo.txt">
-      <Filter>헤더 파일</Filter>
+      <Filter>Memos</Filter>
+    </Text>
+    <Text Include="StagingBuffer.txt">
+      <Filter>Memos</Filter>
     </Text>
   </ItemGroup>
 </Project>
