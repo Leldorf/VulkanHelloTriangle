@@ -129,7 +129,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>GLEW_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>../\VulkanSDK\1.2.182.0\Include;../\glfw-3.3.2.bin.WIN64\include;../\glm-master</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../\VulkanSDK\1.2.182.0\Include;../\glfw-3.3.2.bin.WIN64\include;../\glm-master;../\stb-master</AdditionalIncludeDirectories>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <DisableSpecificWarnings>26812</DisableSpecificWarnings>
@@ -181,6 +181,9 @@
   <ItemGroup>
     <Text Include="memo.txt" />
     <Text Include="StagingBuffer.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\texture.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

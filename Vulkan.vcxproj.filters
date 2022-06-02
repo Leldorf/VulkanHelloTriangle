@@ -19,6 +19,9 @@
     <Filter Include="Memos">
       <UniqueIdentifier>{a3a3ebb0-3247-4094-98f1-bb53ecaec414}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\textures">
+      <UniqueIdentifier>{6d69c633-2a70-4c8f-9712-636f2844fc85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -57,5 +60,10 @@
     <Text Include="StagingBuffer.txt">
       <Filter>Memos</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="textures\texture.jpg">
+      <Filter>리소스 파일\textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>
