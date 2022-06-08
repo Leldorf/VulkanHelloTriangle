@@ -34,3 +34,5 @@ VkResult CreateDebugUtilsMessengerEXT(VkInstance instance, const VkDebugUtilsMes
 void DestroyDebugUtilsMessengerEXT(VkInstance instance, VkDebugUtilsMessengerEXT debugMessenger, const VkAllocationCallbacks* pAllocator);
 
 std::vector<char> readFile(const std::string& filename);
+
+bool hasStencilComponent(VkFormat format);
